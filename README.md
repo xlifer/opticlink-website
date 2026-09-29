@@ -1,4 +1,4 @@
-# Opticlink — Website
+# OpticLink — Website
 
 Στατικό website (HTML/CSS/JS) που φιλοξενείται στο **GitHub Pages**:
 https://opticlink.gr
