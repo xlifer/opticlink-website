@@ -1,19 +1,21 @@
-﻿# Opticlink â€” Website
+# Opticlink — Website
 
-Î£Ï„Î±Ï„Î¹ÎºÏŒ website (HTML/CSS/JS) Ï€Î¿Ï… Ï†Î¹Î»Î¿Î¾ÎµÎ½ÎµÎ¯Ï„Î±Î¹ ÏƒÏ„Î¿ **GitHub Pages**:
+Στατικό website (HTML/CSS/JS) που φιλοξενείται στο **GitHub Pages**:
 https://opticlink.gr
 
-## Î‘ÏÏ‡ÎµÎ¯Î±
-- `index.html` â€” Ï€ÎµÏÎ¹ÎµÏ‡ÏŒÎ¼ÎµÎ½Î¿ Ï„Î·Ï‚ ÏƒÎµÎ»Î¯Î´Î±Ï‚
-- `styles.css` â€” ÎµÎ¼Ï†Î¬Î½Î¹ÏƒÎ·
-- `script.js` â€” Î¼ÎµÎ½Î¿Ï ÎºÎ¹Î½Î·Ï„Î¿Ï, animations, Ï†ÏŒÏÎ¼Î± ÏÎ±Î½Ï„ÎµÎ²Î¿Ï
-- `favicon.svg` â€” ÎµÎ¹ÎºÎ¿Î½Î¯Î´Î¹Î¿ ÎºÎ±ÏÏ„Î­Î»Î±Ï‚
+## Αρχεία
+- `index.html` — περιεχόμενο της σελίδας
+- `styles.css` — εμφάνιση
+- `script.js` — μενού κινητού, animations, φόρμα ραντεβού
+- `favicon.svg` — εικονίδιο καρτέλας
+- `CNAME` — το domain του site (`opticlink.gr`)
 
-ÎšÎ¬Î¸Îµ Î±Î»Î»Î±Î³Î® ÏƒÏ„Î¿ branch `main` Î´Î·Î¼Î¿ÏƒÎ¹ÎµÏÎµÏ„Î±Î¹ Î±Ï…Ï„ÏŒÎ¼Î±Ï„Î± ÏƒÎµ 1â€“2 Î»ÎµÏ€Ï„Î¬.
+Κάθε αλλαγή στο branch `main` δημοσιεύεται αυτόματα σε 1–2 λεπτά.
 
-## Î•ÎºÎºÏÎµÎ¼ÏŒÏ„Î·Ï„ÎµÏ‚
-- [ ] Î¦ÏŒÏÎ¼Î± ÏÎ±Î½Ï„ÎµÎ²Î¿Ï: ÏƒÏÎ½Î´ÎµÏƒÎ· Î¼Îµ [Formspree](https://formspree.io) â€” Î±Î½Ï„Î¹ÎºÎ±Ï„Î¬ÏƒÏ„Î±ÏƒÎ· Ï„Î¿Ï… `YOUR_FORM_ID` ÏƒÏ„Î¿ `index.html`
-- [x] Î¤Î·Î»Î­Ï†Ï‰Î½Î¿ ÎºÎ±Î¹ email
-- [ ] Î©ÏÎ¬ÏÎ¹Î¿ ÎºÎ±Î¹ Ï€ÎµÏÎ¹Î¿Ï‡Î® ÎµÎ¾Ï…Ï€Î·ÏÎ­Ï„Î·ÏƒÎ·Ï‚
-- [ ] Î ÏÎ±Î³Î¼Î±Ï„Î¹ÎºÎ¿Î¯ Î±ÏÎ¹Î¸Î¼Î¿Î¯ ÏƒÏ„Î± ÏƒÏ„Î±Ï„Î¹ÏƒÏ„Î¹ÎºÎ¬ (`data-count`)
-- [ ] Custom domain (Ï€.Ï‡. `www.opticlink.gr`) â€” Settings â†’ Pages â†’ Custom domain
+## Εκκρεμότητες
+- [ ] Φόρμα ραντεβού: σύνδεση με [Formspree](https://formspree.io) — αντικατάσταση του `YOUR_FORM_ID` στο `index.html`
+- [x] Τηλέφωνο και email
+- [ ] Ωράριο και περιοχή εξυπηρέτησης
+- [ ] Πραγματικοί αριθμοί στα στατιστικά (`data-count`)
+- [x] Custom domain `opticlink.gr` (DNS στο papaki.gr)
+- [ ] Enforce HTTPS (Settings → Pages)
