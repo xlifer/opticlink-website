@@ -7,7 +7,8 @@ https://opticlink.gr
 - `index.html` — περιεχόμενο της σελίδας
 - `styles.css` — εμφάνιση
 - `script.js` — μενού κινητού, animations, slideshow hero, parallax, lightbox gallery, φόρμα ραντεβού
-- `favicon.svg` — εικονίδιο καρτέλας
+- `images/brand/` — λογότυπο OpticLink (`logo.png` για ανοιχτό φόντο, `logo-on-dark.png` για το site), favicon και apple-touch-icon
+- `favicon.svg` — παλιό εικονίδιο καρτέλας (δεν χρησιμοποιείται πλέον)
 - `images/` — φωτογραφίες έργων (WebP, `-sm` 640px / `-lg` 1100px), εικόνες hero, `og.jpg` για social sharing και `clients/` με λογότυπα πελατών (SVG)
 - `CNAME` — το domain του site (`opticlink.gr`)
 - `robots.txt`, `sitemap.xml` — για τις μηχανές αναζήτησης
