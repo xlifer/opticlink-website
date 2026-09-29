@@ -5,10 +5,37 @@ menuBtn.addEventListener('click', () => {
   const open = menu.classList.toggle('open');
   menuBtn.setAttribute('aria-expanded', open);
 });
-menu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+const closeMenu = () => {
   menu.classList.remove('open');
   menuBtn.setAttribute('aria-expanded', 'false');
-}));
+};
+menu.querySelectorAll('a').forEach(a => a.addEventListener('click', closeMenu));
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape' && menu.classList.contains('open')) { closeMenu(); menuBtn.focus(); }
+});
+document.addEventListener('click', e => {
+  if (menu.classList.contains('open') && !e.target.closest('.nav')) closeMenu();
+});
+
+// Header shadow on scroll
+const nav = document.querySelector('.nav');
+const onScroll = () => nav.classList.toggle('scrolled', window.scrollY > 10);
+onScroll();
+window.addEventListener('scroll', onScroll, { passive: true });
+
+// Highlight current section in the menu
+const navLinks = [...menu.querySelectorAll('a[href^="#"]:not(.btn)')];
+const sectionIO = new IntersectionObserver(entries => {
+  entries.forEach(e => {
+    if (!e.isIntersecting) return;
+    navLinks.forEach(a => {
+      const active = a.getAttribute('href') === '#' + e.target.id;
+      a.classList.toggle('active', active);
+      if (active) a.setAttribute('aria-current', 'true'); else a.removeAttribute('aria-current');
+    });
+  });
+}, { rootMargin: '-45% 0px -50% 0px' });
+navLinks.forEach(a => { const sec = document.querySelector(a.getAttribute('href')); if (sec) sectionIO.observe(sec); });
 
 // Reveal on scroll
 const io = new IntersectionObserver(entries => {
@@ -18,7 +45,8 @@ const io = new IntersectionObserver(entries => {
 }, { threshold: 0.15 });
 document.querySelectorAll('.reveal, .about-visual').forEach(el => io.observe(el));
 
-// Count-up stats
+// Count-up stats (skipped when the user prefers reduced motion)
+const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 const counters = document.querySelectorAll('[data-count]');
 const countIO = new IntersectionObserver(entries => {
   entries.forEach(e => {
@@ -33,14 +61,15 @@ const countIO = new IntersectionObserver(entries => {
     countIO.unobserve(el);
   });
 }, { threshold: 0.5 });
-counters.forEach(c => countIO.observe(c));
+if (!reduceMotion) counters.forEach(c => { c.textContent = '0'; countIO.observe(c); });
 
 // Booking form: min date = today, weekends not allowed
 const dateInput = document.querySelector('input[name="date"]');
 const today = new Date();
 dateInput.min = new Date(today.getTime() - today.getTimezoneOffset() * 60000).toISOString().slice(0, 10);
 dateInput.addEventListener('input', () => {
-  const d = new Date(dateInput.value).getDay();
+  const [y, m, day] = dateInput.value.split('-').map(Number);
+  const d = new Date(y, m - 1, day).getDay();
   dateInput.setCustomValidity(d === 0 || d === 6 ? 'Επιλέξτε εργάσιμη ημέρα (Δευτέρα – Παρασκευή).' : '');
 });
 

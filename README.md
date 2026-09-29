@@ -9,6 +9,7 @@ https://opticlink.gr
 - `script.js` — μενού κινητού, animations, φόρμα ραντεβού
 - `favicon.svg` — εικονίδιο καρτέλας
 - `CNAME` — το domain του site (`opticlink.gr`)
+- `robots.txt`, `sitemap.xml` — για τις μηχανές αναζήτησης
 
 Κάθε αλλαγή στο branch `main` δημοσιεύεται αυτόματα σε 1–2 λεπτά.
 
