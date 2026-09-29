@@ -13,6 +13,7 @@ https://xlifer.github.io/opticlink-website/
 
 ## Εκκρεμότητες
 - [ ] Φόρμα ραντεβού: σύνδεση με [Formspree](https://formspree.io) — αντικατάσταση του `YOUR_FORM_ID` στο `index.html`
-- [ ] Πραγματικά στοιχεία επικοινωνίας (τηλέφωνο, email, ωράριο, περιοχή)
+- [x] Τηλέφωνο και email
+- [ ] Ωράριο και περιοχή εξυπηρέτησης
 - [ ] Πραγματικοί αριθμοί στα στατιστικά (`data-count`)
 - [ ] Custom domain (π.χ. `www.opticlink.gr`) — Settings → Pages → Custom domain

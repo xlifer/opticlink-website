@@ -51,7 +51,7 @@ form.addEventListener('submit', async ev => {
   ev.preventDefault();
   if (form.action.includes('YOUR_FORM_ID')) {
     status.className = 'form-status err';
-    status.textContent = 'Η φόρμα δεν έχει συνδεθεί ακόμα. Καλέστε μας στο 210 000 0000.';
+    status.textContent = 'Η φόρμα δεν έχει συνδεθεί ακόμα. Καλέστε μας στο 694 472 1926.';
     return;
   }
   const btn = form.querySelector('button');
