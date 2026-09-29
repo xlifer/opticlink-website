@@ -59,6 +59,8 @@ img, svg { display: block; max-width: 100%; }
 .nav.scrolled { background: rgba(10, 22, 40, .92); box-shadow: 0 10px 30px -18px rgba(0, 0, 0, .8); }
 .nav-inner { display: flex; align-items: center; justify-content: space-between; height: 70px; }
 .logo { display: flex; align-items: center; gap: 10px; font-weight: 800; font-size: 20px; letter-spacing: -.02em; }
+.logo img { height: 44px; width: auto; }
+.footer .logo img { height: 34px; }
 .menu { display: flex; align-items: center; gap: 28px; font-weight: 600; font-size: 15px; }
 .menu a:not(.btn) { color: var(--muted); transition: color .2s; }
 .menu a:not(.btn):hover, .menu a.active { color: var(--text); }
