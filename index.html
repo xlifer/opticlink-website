@@ -12,7 +12,9 @@
   <meta property="og:site_name" content="Opticlink">
   <meta property="og:title" content="Opticlink — Οπτικές ίνες & Δίκτυα">
   <meta property="og:description" content="Εγκαταστάσεις οπτικών ινών, συγκολλήσεις, μετρήσεις και δίκτυα για σπίτια και επιχειρήσεις.">
+  <meta property="og:image" content="https://opticlink.gr/images/og.jpg">
   <meta name="theme-color" content="#0a1628">
+  <link rel="preload" as="image" href="images/hero-cabinet.webp" type="image/webp">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -50,6 +52,7 @@
     <button class="menu-btn" aria-label="Μενού" aria-expanded="false" aria-controls="menu"><span></span><span></span></button>
     <nav class="menu" id="menu" aria-label="Κύρια πλοήγηση">
       <a href="#services">Υπηρεσίες</a>
+      <a href="#work">Έργα</a>
       <a href="#process">Διαδικασία</a>
       <a href="#about">Σχετικά</a>
       <a href="#faq">Ερωτήσεις</a>
@@ -61,6 +64,11 @@
 <main id="main">
   <!-- HERO -->
   <section class="hero">
+    <div class="hero-media" aria-hidden="true">
+      <div class="slide active" style="background-image:url(images/hero-cabinet.webp)"></div>
+      <div class="slide" style="background-image:url(images/hero-closure.webp)"></div>
+      <div class="slide" style="background-image:url(images/trays-blue-lg.webp)"></div>
+    </div>
     <div class="fibers" aria-hidden="true">
       <span></span><span></span><span></span><span></span><span></span>
     </div>
@@ -76,6 +84,27 @@
         <li><strong data-count="10">10</strong><span>+ χρόνια εμπειρίας</span></li>
         <li><strong data-count="1500">1.500</strong><span>+ συνδέσεις FTTH</span></li>
         <li><strong data-count="24">24</strong><span>ώρες απόκριση σε βλάβες</span></li>
+      </ul>
+    </div>
+    <div class="slide-dots" aria-hidden="true"><span class="active"></span><span></span><span></span></div>
+  </section>
+
+  <!-- TICKER -->
+  <div class="ticker" aria-hidden="true">
+    <div class="ticker-track">
+      <span>FTTH</span><span>Fusion Splicing</span><span>OTDR</span><span>Καμπίνες & ODF</span><span>Μούφες</span><span>Εναέρια δίκτυα</span><span>Δομημένη καλωδίωση</span><span>Wi‑Fi</span>
+      <span>FTTH</span><span>Fusion Splicing</span><span>OTDR</span><span>Καμπίνες & ODF</span><span>Μούφες</span><span>Εναέρια δίκτυα</span><span>Δομημένη καλωδίωση</span><span>Wi‑Fi</span>
+    </div>
+  </div>
+
+  <!-- CLIENTS -->
+  <section class="clients" aria-labelledby="clients-title">
+    <div class="container clients-inner">
+      <p class="eyebrow" id="clients-title">Οι πελάτες μας</p>
+      <ul class="client-logos">
+        <li class="reveal"><img src="images/clients/dei.svg" alt="ΔΕΗ" width="72" height="72" loading="lazy"></li>
+        <li class="reveal"><img src="images/clients/telekom.svg" alt="Telekom" width="72" height="72" loading="lazy"></li>
+        <li class="reveal"><img src="images/clients/vodafone.svg" alt="Vodafone" width="200" height="50" loading="lazy"></li>
       </ul>
     </div>
   </section>
@@ -120,6 +149,90 @@
     </div>
   </section>
 
+  <!-- WORK / GALLERY -->
+  <section id="work" class="section">
+    <div class="container">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">Από το πεδίο</p>
+          <h2>Η δουλειά μας, όπως είναι.</h2>
+        </div>
+        <p class="section-note">Πραγματικές φωτογραφίες από έργα μας — από καμπίνες και μούφες μέχρι τον τερματισμό στο σπίτι σας.</p>
+      </div>
+      <div class="gallery">
+        <figure class="shot wide tall reveal">
+          <a href="images/cabinet-lg.webp" data-caption="Καμπίνα διανομής — Κασέτες συγκόλλησης, οργανωμένες ανά χρώμα και αριθμό.">
+            <img src="images/cabinet-sm.webp" srcset="images/cabinet-sm.webp 640w, images/cabinet-lg.webp 1100w" sizes="(max-width: 720px) 100vw, 40vw" alt="Καμπίνα διανομής: Κασέτες συγκόλλησης, οργανωμένες ανά χρώμα και αριθμό." loading="lazy" decoding="async">
+          </a>
+          <figcaption><strong>Καμπίνα διανομής</strong><span>Κασέτες συγκόλλησης, οργανωμένες ανά χρώμα και αριθμό.</span></figcaption>
+        </figure>
+        <figure class="shot tall reveal">
+          <a href="images/splicing-lg.webp" data-caption="Συγκόλληση μούφας — Προετοιμασία μούφας στο πεδίο, πριν τις συγκολλήσεις.">
+            <img src="images/splicing-sm.webp" srcset="images/splicing-sm.webp 640w, images/splicing-lg.webp 1100w" sizes="(max-width: 720px) 100vw, 40vw" alt="Συγκόλληση μούφας: Προετοιμασία μούφας στο πεδίο, πριν τις συγκολλήσεις." loading="lazy" decoding="async">
+          </a>
+          <figcaption><strong>Συγκόλληση μούφας</strong><span>Προετοιμασία μούφας στο πεδίο, πριν τις συγκολλήσεις.</span></figcaption>
+        </figure>
+        <figure class="shot tall reveal">
+          <a href="images/termination-lg.webp" data-caption="Τερματισμός κτιρίου — Κουτί με SC/APC συνδέσμους και splitter.">
+            <img src="images/termination-sm.webp" srcset="images/termination-sm.webp 640w, images/termination-lg.webp 1100w" sizes="(max-width: 720px) 100vw, 40vw" alt="Τερματισμός κτιρίου: Κουτί με SC/APC συνδέσμους και splitter." loading="lazy" decoding="async">
+          </a>
+          <figcaption><strong>Τερματισμός κτιρίου</strong><span>Κουτί με SC/APC συνδέσμους και splitter.</span></figcaption>
+        </figure>
+        <figure class="shot tall reveal">
+          <a href="images/trays-blue-lg.webp" data-caption="Αριθμημένες κασέτες — Τεκμηρίωση σε κάθε θέση — τίποτα στην τύχη.">
+            <img src="images/trays-blue-sm.webp" srcset="images/trays-blue-sm.webp 640w, images/trays-blue-lg.webp 1100w" sizes="(max-width: 720px) 100vw, 40vw" alt="Αριθμημένες κασέτες: Τεκμηρίωση σε κάθε θέση — τίποτα στην τύχη." loading="lazy" decoding="async">
+          </a>
+          <figcaption><strong>Αριθμημένες κασέτες</strong><span>Τεκμηρίωση σε κάθε θέση — τίποτα στην τύχη.</span></figcaption>
+        </figure>
+        <figure class="shot tall reveal">
+          <a href="images/closure-lg.webp" data-caption="Μούφα διακλάδωσης — Καθαρή διαδρομή ινών και προστασία συγκολλήσεων.">
+            <img src="images/closure-sm.webp" srcset="images/closure-sm.webp 640w, images/closure-lg.webp 1100w" sizes="(max-width: 720px) 100vw, 40vw" alt="Μούφα διακλάδωσης: Καθαρή διαδρομή ινών και προστασία συγκολλήσεων." loading="lazy" decoding="async">
+          </a>
+          <figcaption><strong>Μούφα διακλάδωσης</strong><span>Καθαρή διαδρομή ινών και προστασία συγκολλήσεων.</span></figcaption>
+        </figure>
+        <figure class="shot tall reveal">
+          <a href="images/pole-lg.webp" data-caption="Εναέριο δίκτυο — Κουτιά διανομής σε κολόνα, για σύνδεση κατοικιών.">
+            <img src="images/pole-sm.webp" srcset="images/pole-sm.webp 640w, images/pole-lg.webp 1100w" sizes="(max-width: 720px) 100vw, 40vw" alt="Εναέριο δίκτυο: Κουτιά διανομής σε κολόνα, για σύνδεση κατοικιών." loading="lazy" decoding="async">
+          </a>
+          <figcaption><strong>Εναέριο δίκτυο</strong><span>Κουτιά διανομής σε κολόνα, για σύνδεση κατοικιών.</span></figcaption>
+        </figure>
+        <figure class="shot wide tall reveal">
+          <a href="images/cabinet-open-lg.webp" data-caption="Καμπίνα σε λειτουργία — Κασέτες, patch panel και σημασμένα καλώδια — όλα στη θέση τους.">
+            <img src="images/cabinet-open-sm.webp" srcset="images/cabinet-open-sm.webp 640w, images/cabinet-open-lg.webp 1100w" sizes="(max-width: 720px) 100vw, 40vw" alt="Καμπίνα σε λειτουργία: Κασέτες, patch panel και σημασμένα καλώδια — όλα στη θέση τους." loading="lazy" decoding="async">
+          </a>
+          <figcaption><strong>Καμπίνα σε λειτουργία</strong><span>Κασέτες, patch panel και σημασμένα καλώδια — όλα στη θέση τους.</span></figcaption>
+        </figure>
+        <figure class="shot tall reveal">
+          <a href="images/fiber-loop-lg.webp" data-caption="Διαχείριση εφεδρείας — Οι ίνες τυλιγμένες με σωστή ακτίνα καμπυλότητας, χωρίς τσακίσματα.">
+            <img src="images/fiber-loop-sm.webp" srcset="images/fiber-loop-sm.webp 640w, images/fiber-loop-lg.webp 1100w" sizes="(max-width: 720px) 100vw, 40vw" alt="Διαχείριση εφεδρείας: Οι ίνες τυλιγμένες με σωστή ακτίνα καμπυλότητας, χωρίς τσακίσματα." loading="lazy" decoding="async">
+          </a>
+          <figcaption><strong>Διαχείριση εφεδρείας</strong><span>Οι ίνες τυλιγμένες με σωστή ακτίνα καμπυλότητας, χωρίς τσακίσματα.</span></figcaption>
+        </figure>
+        <figure class="shot tall reveal">
+          <a href="images/splice-trays-lg.webp" data-caption="Κασέτες συγκόλλησης — Αριθμημένες θέσεις και καθαρή δρομολόγηση σε κάθε κασέτα.">
+            <img src="images/splice-trays-sm.webp" srcset="images/splice-trays-sm.webp 640w, images/splice-trays-lg.webp 1100w" sizes="(max-width: 720px) 100vw, 40vw" alt="Κασέτες συγκόλλησης: Αριθμημένες θέσεις και καθαρή δρομολόγηση σε κάθε κασέτα." loading="lazy" decoding="async">
+          </a>
+          <figcaption><strong>Κασέτες συγκόλλησης</strong><span>Αριθμημένες θέσεις και καθαρή δρομολόγηση σε κάθε κασέτα.</span></figcaption>
+        </figure>
+        <figure class="shot tall reveal">
+          <a href="images/village-lg.webp" data-caption="Και στο πιο στενό σοκάκι — Εγκαταστάσεις που σέβονται τον χώρο και την αρχιτεκτονική.">
+            <img src="images/village-sm.webp" srcset="images/village-sm.webp 640w, images/village-lg.webp 1100w" sizes="(max-width: 720px) 100vw, 40vw" alt="Και στο πιο στενό σοκάκι: Εγκαταστάσεις που σέβονται τον χώρο και την αρχιτεκτονική." loading="lazy" decoding="async">
+          </a>
+          <figcaption><strong>Και στο πιο στενό σοκάκι</strong><span>Εγκαταστάσεις που σέβονται τον χώρο και την αρχιτεκτονική.</span></figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- PARALLAX BAND -->
+  <section class="band" aria-label="Φιλοσοφία">
+    <div class="band-bg" aria-hidden="true"></div>
+    <div class="container band-inner reveal">
+      <p class="eyebrow">Η φιλοσοφία μας</p>
+      <blockquote>Κάθε ίνα μετράει.<br><span class="grad">Κάθε συγκόλληση τεκμηριώνεται.</span></blockquote>
+    </div>
+  </section>
+
   <!-- PROCESS -->
   <section id="process" class="section alt">
     <div class="container">
@@ -148,19 +261,10 @@
           <li>Άμεση απόκριση σε βλάβες</li>
         </ul>
       </div>
-      <div class="about-visual reveal" aria-hidden="true">
-        <svg viewBox="0 0 400 320">
-          <defs>
-            <linearGradient id="g1" x1="0" x2="1"><stop offset="0" stop-color="#22d3ee"/><stop offset="1" stop-color="#6366f1"/></linearGradient>
-          </defs>
-          <g fill="none" stroke="url(#g1)" stroke-width="3" stroke-linecap="round">
-            <path class="draw" d="M10 60 C120 60 140 160 200 160 S300 60 390 60"/>
-            <path class="draw d2" d="M10 160 H390"/>
-            <path class="draw d3" d="M10 260 C120 260 140 160 200 160 S300 260 390 260"/>
-          </g>
-          <circle cx="200" cy="160" r="22" fill="#0a1628" stroke="#22d3ee" stroke-width="3"/>
-          <circle cx="200" cy="160" r="7" fill="#22d3ee"/>
-        </svg>
+      <div class="about-visual reveal">
+        <img class="av-main" data-parallax="-0.06" src="images/termination-sm.webp" srcset="images/termination-sm.webp 640w, images/termination-lg.webp 1100w" sizes="(max-width: 960px) 80vw, 36vw" alt="Κουτί τερματισμού οπτικής ίνας με συνδέσμους SC/APC" loading="lazy">
+        <img class="av-float" data-parallax="0.08" src="images/splicing-sm.webp" alt="Μούφα οπτικών ινών και εργαλεία στο πεδίο" loading="lazy">
+        <div class="av-badge"><strong>&lt; 0,01 dB</strong><span>στόχος απώλειας ανά συγκόλληση</span></div>
       </div>
     </div>
   </section>
@@ -262,6 +366,13 @@
 <a href="tel:+306944721926" class="call-fab" aria-label="Κλήση στο 694 472 1926">
   <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>
 </a>
+
+<div class="lightbox" id="lightbox" hidden>
+  <button class="lb-close" aria-label="Κλείσιμο">×</button>
+  <button class="lb-prev" aria-label="Προηγούμενη">‹</button>
+  <figure><img alt=""><figcaption></figcaption></figure>
+  <button class="lb-next" aria-label="Επόμενη">›</button>
+</div>
 
 <script src="script.js"></script>
 </body>
