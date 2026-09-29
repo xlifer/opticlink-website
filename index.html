@@ -3,14 +3,14 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Opticlink — Οπτικές ίνες & Δίκτυα</title>
-  <meta name="description" content="Opticlink: εγκαταστάσεις οπτικών ινών FTTH, συγκολλήσεις, μετρήσεις OTDR και επαγγελματικά δίκτυα. Κλείστε ραντεβού online.">
+  <title>OpticLink — Οπτικές ίνες & Δίκτυα</title>
+  <meta name="description" content="OpticLink: εγκαταστάσεις οπτικών ινών FTTH, συγκολλήσεις, μετρήσεις OTDR και επαγγελματικά δίκτυα. Κλείστε ραντεβού online.">
   <link rel="canonical" href="https://opticlink.gr/">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://opticlink.gr/">
   <meta property="og:locale" content="el_GR">
-  <meta property="og:site_name" content="Opticlink">
-  <meta property="og:title" content="Opticlink — Οπτικές ίνες & Δίκτυα">
+  <meta property="og:site_name" content="OpticLink">
+  <meta property="og:title" content="OpticLink — Οπτικές ίνες & Δίκτυα">
   <meta property="og:description" content="Εγκαταστάσεις οπτικών ινών, συγκολλήσεις, μετρήσεις και δίκτυα για σπίτια και επιχειρήσεις.">
   <meta property="og:image" content="https://opticlink.gr/images/og.jpg">
   <meta name="theme-color" content="#0a1628">
@@ -20,12 +20,19 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
-  <script>document.documentElement.classList.add('js')</script>
+  <script>
+    // Hide .reveal content for the scroll animation. If script.js fails to load
+    // or run, the timeout below makes all content visible again.
+    (function (r) {
+      r.classList.add('js');
+      setTimeout(function () { if (!r.classList.contains('reveal-ready')) r.classList.remove('js'); }, 3000);
+    })(document.documentElement);
+  </script>
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
-    "name": "Opticlink",
+    "name": "OpticLink",
     "description": "Εγκαταστάσεις οπτικών ινών FTTH, συγκολλήσεις, μετρήσεις OTDR και επαγγελματικά δίκτυα.",
     "url": "https://opticlink.gr/",
     "telephone": "+306944721926",
@@ -45,9 +52,9 @@
 
 <header class="nav" id="top">
   <div class="container nav-inner">
-    <a href="#top" class="logo" aria-label="Opticlink αρχική">
+    <a href="#top" class="logo" aria-label="OpticLink αρχική">
       <svg viewBox="0 0 32 32" width="30" height="30" aria-hidden="true"><circle cx="16" cy="16" r="14" fill="none" stroke="currentColor" stroke-width="2.5"/><path d="M4 16h24" stroke="var(--accent)" stroke-width="2.5" stroke-linecap="round"/><circle cx="16" cy="16" r="3.5" fill="var(--accent)"/></svg>
-      <span>Opticlink</span>
+      <span>OpticLink</span>
     </a>
     <button class="menu-btn" aria-label="Μενού" aria-expanded="false" aria-controls="menu"><span></span><span></span></button>
     <nav class="menu" id="menu" aria-label="Κύρια πλοήγηση">
@@ -253,7 +260,7 @@
       <div class="reveal">
         <p class="eyebrow">Σχετικά με εμάς</p>
         <h2>Τεχνογνωσία που φαίνεται στις μετρήσεις.</h2>
-        <p>Η Opticlink είναι τεχνική εταιρεία με εξειδίκευση στις οπτικές ίνες και τα δίκτυα δεδομένων. Συνεργαζόμαστε με ιδιώτες, διαχειριστές πολυκατοικιών, επιχειρήσεις και παρόχους, με έμφαση στην ποιότητα, την ταχύτητα και τη σωστή τεκμηρίωση.</p>
+        <p>Η OpticLink είναι τεχνική εταιρεία με εξειδίκευση στις οπτικές ίνες και τα δίκτυα δεδομένων. Συνεργαζόμαστε με ιδιώτες, διαχειριστές πολυκατοικιών, επιχειρήσεις και παρόχους, με έμφαση στην ποιότητα, την ταχύτητα και τη σωστή τεκμηρίωση.</p>
         <ul class="checks">
           <li>Πιστοποιημένος εξοπλισμός συγκόλλησης και OTDR</li>
           <li>Γραπτή προσφορά πριν από κάθε εργασία</li>
@@ -275,7 +282,7 @@
       <div class="reveal">
         <p class="eyebrow">Ραντεβού</p>
         <h2>Κλείστε αυτοψία ή τεχνική επίσκεψη.</h2>
-        <p>Συμπληρώστε τη φόρμα και θα σας επιβεβαιώσουμε το ραντεβού τηλεφωνικά ή με email, συνήθως μέσα στην ίδια εργάσιμη.</p>
+        <p>Καλέστε μας ή στείλτε μας email και θα κανονίσουμε το ραντεβού, συνήθως μέσα στην ίδια εργάσιμη.</p>
         <div class="contact-list">
           <a href="tel:+306944721926"><strong>Τηλέφωνο</strong>694 472 1926</a>
           <a href="mailto:info@opticlink.gr"><strong>Email</strong>info@opticlink.gr</a>
@@ -284,8 +291,17 @@
         </div>
       </div>
 
-      <!-- Αντικαταστήστε το YOUR_FORM_ID με το ID από formspree.io -->
-      <form class="form reveal" id="booking-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+      <!-- Μέχρι να μπει το Formspree ID, εμφανίζεται αυτή η κάρτα αντί για τη φόρμα. -->
+      <div class="form booking-fallback reveal" id="booking-fallback">
+        <h3>Κλείστε ραντεβού τώρα</h3>
+        <p>Πείτε μας τι χρειάζεστε και την περιοχή σας, και σας προτείνουμε μέρα και ώρα.</p>
+        <a class="btn" href="tel:+306944721926">Κλήση: 694 472 1926</a>
+        <a class="btn btn-ghost" href="mailto:info@opticlink.gr?subject=%CE%91%CE%AF%CF%84%CE%B7%CE%BC%CE%B1%20%CF%81%CE%B1%CE%BD%CF%84%CE%B5%CE%B2%CE%BF%CF%8D">Email: info@opticlink.gr</a>
+        <p class="note">Δευτέρα – Παρασκευή, 08:00 – 18:00</p>
+      </div>
+
+      <!-- Αντικαταστήστε το YOUR_FORM_ID με το ID από formspree.io. Η φόρμα εμφανίζεται αυτόματα. -->
+      <form class="form reveal" id="booking-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST" hidden>
         <div class="row">
           <label>Ονοματεπώνυμο<input name="name" required autocomplete="name"></label>
           <label>Τηλέφωνο<input name="phone" type="tel" required autocomplete="tel"></label>
@@ -352,9 +368,9 @@
   <div class="container footer-inner">
     <a href="#top" class="logo">
       <svg viewBox="0 0 32 32" width="26" height="26" aria-hidden="true"><circle cx="16" cy="16" r="14" fill="none" stroke="currentColor" stroke-width="2.5"/><path d="M4 16h24" stroke="var(--accent)" stroke-width="2.5" stroke-linecap="round"/><circle cx="16" cy="16" r="3.5" fill="var(--accent)"/></svg>
-      <span>Opticlink</span>
+      <span>OpticLink</span>
     </a>
-    <p>© <span id="year">2026</span> Opticlink. Οπτικές ίνες & Δίκτυα.</p>
+    <p>© <span id="year">2026</span> OpticLink. Οπτικές ίνες & Δίκτυα.</p>
     <div class="footer-contact">
       <a href="tel:+306944721926">694 472 1926</a>
       <a href="mailto:info@opticlink.gr">info@opticlink.gr</a>
@@ -367,13 +383,13 @@
   <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>
 </a>
 
-<div class="lightbox" id="lightbox" hidden>
+<dialog class="lightbox" id="lightbox" aria-label="Φωτογραφία έργου">
   <button class="lb-close" aria-label="Κλείσιμο">×</button>
-  <button class="lb-prev" aria-label="Προηγούμενη">‹</button>
+  <button class="lb-prev" aria-label="Προηγούμενη φωτογραφία">‹</button>
   <figure><img alt=""><figcaption></figcaption></figure>
-  <button class="lb-next" aria-label="Επόμενη">›</button>
-</div>
+  <button class="lb-next" aria-label="Επόμενη φωτογραφία">›</button>
+</dialog>
 
-<script src="script.js"></script>
+<script src="script.js" onerror="document.documentElement.classList.remove('js')"></script>
 </body>
 </html>
