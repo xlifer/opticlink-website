@@ -195,6 +195,14 @@ h3 { font-size: 19px; letter-spacing: -.01em; margin-bottom: 8px; }
     #f3f8ff;
 }
 .section.light .eyebrow { color: var(--brand); }
+.section.light .card {
+  background: #fff; border-color: var(--line);
+  box-shadow: 0 16px 36px -26px rgba(11, 35, 102, .5);
+}
+.section.light .card:hover { border-color: rgba(10, 140, 255, .45); box-shadow: 0 24px 48px -26px rgba(10, 140, 255, .55); }
+.section.light .card h3 { color: var(--brand-navy); }
+.section.light .icon { background: linear-gradient(135deg, var(--brand), var(--accent)); border: 0; box-shadow: 0 10px 20px -10px rgba(10, 140, 255, .8); }
+.section.light .icon svg { stroke: #fff; }
 .faq-grid { display: grid; grid-template-columns: 5fr 7fr; gap: 56px; align-items: start; }
 .faq-intro > p { color: var(--muted); margin-bottom: 28px; max-width: 42ch; }
 .faq-intro h2 { margin-bottom: 18px; }
