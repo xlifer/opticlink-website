@@ -188,13 +188,35 @@ h3 { font-size: 19px; letter-spacing: -.01em; margin-bottom: 8px; }
 /* ---------- FAQ (light section) ---------- */
 .section.light {
   --text: #0b1f45; --muted: #4b5f82; --line: rgba(11, 35, 102, .1);
+  /* Neighbouring section colours (RGB) that fade softly into the light background. */
+  --fade-top: 13, 31, 60; --fade-bottom: 13, 31, 60; --fade: 200px;
   position: relative; overflow: hidden; color: var(--text);
+  padding-block: calc(var(--fade) + 10px);
   background:
-    radial-gradient(600px 400px at 100% 0%, rgba(10, 140, 255, .12), transparent 70%),
-    radial-gradient(500px 360px at 0% 100%, rgba(34, 211, 238, .14), transparent 70%),
-    #f3f8ff;
+    linear-gradient(180deg, rgb(var(--fade-top)) 0, rgba(var(--fade-top), .9) calc(var(--fade) * .12), rgba(22, 86, 186, .62) calc(var(--fade) * .38), rgba(10, 140, 255, .26) calc(var(--fade) * .66), rgba(120, 190, 255, 0) var(--fade)),
+    linear-gradient(0deg, rgb(var(--fade-bottom)) 0, rgba(var(--fade-bottom), .9) calc(var(--fade) * .12), rgba(22, 86, 186, .62) calc(var(--fade) * .38), rgba(10, 140, 255, .26) calc(var(--fade) * .66), rgba(120, 190, 255, 0) var(--fade)),
+    radial-gradient(600px 400px at 100% 25%, rgba(10, 140, 255, .12), transparent 70%),
+    radial-gradient(500px 360px at 0% 75%, rgba(34, 211, 238, .14), transparent 70%),
+    linear-gradient(180deg, #dbe9fb, #f3f8ff 30%, #f3f8ff 70%, #dbe9fb);
 }
+/* FAQ: sits under the booking section (--bg-2) and above the blue CTA band (no fade there). */
+#faq {
+  --fade-top: 18, 42, 79; padding-bottom: 110px;
+  background:
+    linear-gradient(180deg, rgb(var(--fade-top)) 0, rgba(var(--fade-top), .9) calc(var(--fade) * .12), rgba(22, 86, 186, .62) calc(var(--fade) * .38), rgba(10, 140, 255, .26) calc(var(--fade) * .66), rgba(120, 190, 255, 0) var(--fade)),
+    radial-gradient(600px 400px at 100% 25%, rgba(10, 140, 255, .12), transparent 70%),
+    radial-gradient(500px 360px at 0% 75%, rgba(34, 211, 238, .14), transparent 70%),
+    linear-gradient(180deg, #dbe9fb, #f3f8ff 30%); }
+#booking { border-bottom: 0; }
 .section.light .eyebrow { color: var(--brand); }
+.section.light .card {
+  background: #fff; border-color: var(--line);
+  box-shadow: 0 16px 36px -26px rgba(11, 35, 102, .5);
+}
+.section.light .card:hover { border-color: rgba(10, 140, 255, .45); box-shadow: 0 24px 48px -26px rgba(10, 140, 255, .55); }
+.section.light .card h3 { color: var(--brand-navy); }
+.section.light .icon { background: linear-gradient(135deg, var(--brand), var(--accent)); border: 0; box-shadow: 0 10px 20px -10px rgba(10, 140, 255, .8); }
+.section.light .icon svg { stroke: #fff; }
 .faq-grid { display: grid; grid-template-columns: 5fr 7fr; gap: 56px; align-items: start; }
 .faq-intro > p { color: var(--muted); margin-bottom: 28px; max-width: 42ch; }
 .faq-intro h2 { margin-bottom: 18px; }
@@ -284,6 +306,8 @@ details p { color: var(--muted); margin-top: 12px; }
   .menu .btn { margin-top: 16px; }
   .hero { padding: 80px 0 72px; }
   .section { padding: 80px 0; }
+  .section.light { --fade: 140px; }
+  #faq { padding-bottom: 80px; }
   .grid.cards, .steps, .form .row { grid-template-columns: 1fr; }
   .stats { gap: 28px; }
   .form { padding: 22px; }
